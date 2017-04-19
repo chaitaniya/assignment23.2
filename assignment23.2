@@ -1,0 +1,31 @@
+Explain Primary data types and complex data types in Hive with an example in brief.
+Ans.
+There are two types of data types-
+1)Primary data type         2)Complex data type
+
+
+1)Primary data type
+Primary data type is further divided in 4 types-
+	a)Numeric –It has data types like
+1.	TINYINT, -128 to 127 
+2.	SMALLINT, -32768 to 32768
+3.	INT
+4.	BIGINT(Similar to int,longint in java) 
+  b)String type- It can be String,varchar or char
+Varchar is basically variable type.It if the value is less than what specified then it silently truncates the empty spaces.eg- name VARCHAR(10).
+Range is 1 to 65535
+Char is for static or fixed length of characters, if the value is shorter than that specified then it is padded with spaces. The maximum length is 255 characters.
+Eg- char name[10]; 
+	c)Date time
+DATE eg- DATE ‘2015-10-07’
+TIMESTAMP eg- yyyy-mm-dd hh:mm:ss 
+  d)Miscellaneous type 
+they include Boolean,binary data types.
+
+
+2)Complex data type
+	a)ARRAY<data type>
+    Eg- ARRAY(‘puja’,’patil’)
+  b)MAP<primitive type,data_type>
+    It is the collection of key value pair.
+  c)Struct<col_name:data_type>
